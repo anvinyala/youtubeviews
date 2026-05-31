@@ -244,7 +244,7 @@ const id=getYoutubeID(url);
 
 if(!id) return null;
 
-return `https://www.youtube.com/embed/${id}?rel=0&mute=1`;
+return `https://www.youtube.com/embed/${id}?rel=0&mute=1&enablejsapi=1&origin=${window.location.origin}`;
 
 }
 
